@@ -2,6 +2,7 @@
 
 * Студент: [Наталья Андрущенко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2597325).
 * Наставник: [Максим Боровик](https://htmlacademy.ru/profile/id1025673).
+* Сайт: [Мой проект Седона](https://skaranatalie.github.io/2597325-sedona-2/).
 
 ---
 
