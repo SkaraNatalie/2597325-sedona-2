@@ -7,12 +7,12 @@
   <body>
     <header class="page-header">
       <nav class="page-navigation">
-        <a class="logo" href="index.html">
-          <img class="page-header-logo" src="#" alt="Логотип города Седона">
+        <a class="logo" href="index.html" aria-current="page">
+          <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
         <ul class="page-navigation-list">
           <li class="page-navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="page-navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -42,7 +42,7 @@
     <main class="main-index">
       <section class="greetings">
         <h1 class="visually-hidden">О Седоне</h1>
-        <img class="greetings-sedona-img" src="#" alt="Добро пожаловать в городок Седона">
+        <img class="greetings-sedona-img" src="images/welcome-sedona.svg" width="458" height="352" alt="Добро пожаловать в городок Седона">
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -52,7 +52,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="town-img" src="#" alt="Дома Седоны на фоне гор">
+            <img class="town-img" src="images/photo-houses.jpg" width="800" height="385" alt="Дома Седоны на фоне гор">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -69,7 +69,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="rocks-img" src="#" alt="Скалы и Каньон Седоны">
+            <img class="rocks-img" src="images/photo-canyon.jpg" width="800" height="385" alt="Скалы и Каньон Седоны">
           </li>
         </ul>
       </section>
@@ -103,7 +103,7 @@
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="subscription-email">Email</label>
+          <label class="visually-hidden" for="subscription-email">Email</label>
           <input class="field" placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
           <button class="button subscription-button" type="submit">
             <span class="subscription-button-text">Подписаться</span>
@@ -131,7 +131,7 @@
         <a class="contacts-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
       </address>
       <a class="footer-htmlacademy-logo" href="https://htmlacademy.ru/">
-        <img class="htmlacademy-logo" src="#" alt="Логотип HTML Academy">
+        <img class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="114.9" height="32.9" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
