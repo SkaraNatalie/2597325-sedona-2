@@ -14,12 +14,37 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.greetings-sedona-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .button {
@@ -37,6 +62,25 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.page-navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-navigation-list {
+  width: 507px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-navigation-user {
+  width: 268px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -62,16 +106,27 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-index {
   background-image: url("../images/background-image.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+
+.advantages-container {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages {
@@ -90,6 +145,11 @@ body {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-auto-flow: row;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -98,7 +158,19 @@ body {
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 85px;
+  margin: 0;
   background-color: #82B3D3;
+}
+
+.advantages-item:first-child {
+  grid-column: span 3;
+}
+
+.advantages-item:last-child {
+  grid-column: span 3;
 }
 
 .advantages-title {
@@ -136,6 +208,10 @@ body {
 }
 
 .conditions-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
 }
@@ -147,6 +223,10 @@ body {
 }
 
 .conditions-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 85px;
   background-color: #83B3D31F;
 }
 
@@ -169,6 +249,16 @@ body {
 .hotels-search-link {
   font-size: 20px;
   line-height: 36px;
+}
+
+.page-footer {
+  background-color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .subscription {
@@ -194,7 +284,19 @@ body {
   background-color: #82B3D3;
 }
 
+.footer-networks-item {
+  width: 142px;
+  margin-right: auto;
+}
+
+footer-htmlacademy-logo {
+  display: block;
+  margin-left: auto;
+}
+
 .contacts-address {
+  width: 720px;
+  margin: 0 41px;
   font-style: normal;
   text-align: center;
 }
@@ -207,7 +309,15 @@ body {
   color: #000000;
 }
 
+.main-inner {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 .inner-header {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
@@ -217,15 +327,56 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-filter {
+  display: flex;
+  width: 151px;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+}
+
+.catalog-filter-group {
+  margin-right: 70px;
+}
+
+.price-container {
+  width: 549px;
+  display: flex;
+  align-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin-left: 70px;
 }
 
 .breadcrumbs {
+  display: flex;
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  display: block;
+  margin-right: 28px;
+}
+
+.breadcrumbs-item:first-child {
+  margin-left: 70px;
 }
 
 .breadcrumbs-link {
@@ -286,7 +437,7 @@ body {
 }
 
 .pagination-link {
-  font-size: 12px;
+  font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;

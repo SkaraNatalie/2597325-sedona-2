@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="page-navigation">
         <a class="logo" href="index.html">
@@ -53,7 +54,6 @@
         </ul>
         <section class="search-results">
           <h2 class="visually-hidden">Результаты поиска</h2>
-          <div class="catalog-products">
             <h3 class="visually-hidden">Список гостиниц с фильтрами</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
@@ -102,6 +102,7 @@
                   </li>
                 </ul>
               </fieldset>
+              <div class="price-container">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="price-form-label">От <input type="text" name="min-price" minlength="0" maxlength="4" pattern="^[ 0-9]+$" placeholder="0"></label>
@@ -109,10 +110,11 @@
               </fieldset>
               <button class="button button-submit" type="submit">Применить</button>
               <button class="button button-reset" type="reset">Сбросить</button>
+              </div>
             </form>
-          </div>
         </section>
       </header>
+      <div class="results-container">
         <p class="results-description">Найдено гостиниц: 38</p>
           <select class="select-results" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
@@ -249,6 +251,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+      </div>
     </main>
     <footer class="page-footer">
       <section class="catalog-subscription">
@@ -262,6 +265,7 @@
           </button>
         </form>
       </section>
+      <div class="footer-container">
       <ul class="footer-networks-list">
         <li class="footer-networks-item">
           <a class="footer-networks-link" href="https://vk.com/htmlacademy">
@@ -285,6 +289,8 @@
       <a class="footer-htmlacademy-logo" href="https://htmlacademy.ru/">
         <img class="htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
+      </div>
     </footer>
+    </div>
   </body>
 </html>
